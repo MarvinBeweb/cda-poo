@@ -1,13 +1,15 @@
 package chat;
 
 public class Cat {
+	
+	// Attributs 
 	String color;
 	String name;
 	
 	
 	
 	/**
-	 * Constructeur sans paramètre
+	 * Constructeur sans parametre
 	 */
 	public Cat() {
 		System.out.println("Naissance d'un nouveau chat");
@@ -16,9 +18,9 @@ public class Cat {
 	}
 	
 	/**
-	 * Constructeur avec paramètre
-	 * @param pName
-	 * @param pColor
+	 * Constructeur avec parametre
+	 * @param pName : String
+	 * @param pColor : String
 	 */
 	public Cat(String pName, String pColor) {
 		System.out.println("Naissance d'un nouveau chat");
@@ -34,23 +36,23 @@ public class Cat {
 	}
 	
 	/**
-	 * méthode qui permet d'écouter le chat
+	 * Methode qui permet d'ecouter le chat
 	 */
 	public void listen() {
 		System.out.println("Miaouuuuuu");
 	}
 	
 	/**
-	 * méthode qui permet de nourrir le chat
-	 * @param food
+	 * Methode qui permet de nourrir le chat
+	 * @param food : String
 	 */
 	public void eat(String food) {
 		System.out.println(this.name + " mange " + food);
 	}
 	
 	/**
-	 * Méthode qui permet d'envoyer le chat à la chasse
-	 * @return
+	 * Methode qui permet d'envoyer le chat a la chasse
+	 * @return String
 	 */
 	public String hunt() {
 		System.out.println(this.name + " part à la chasse ");
@@ -59,6 +61,9 @@ public class Cat {
 		return chasse[n];
 	} 
 	
+	/**
+	 * Methode qui fait dormir notre chat
+	 */
 	public void sleep() {
 		System.out.println(this.name + " dort");
 	}
